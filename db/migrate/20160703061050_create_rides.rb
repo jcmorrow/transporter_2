@@ -4,7 +4,7 @@ class CreateRides < ActiveRecord::Migration[5.0]
       t.string "destination"
       t.string "origin"
       t.integer "price_in_cents"
-      t.integer "seats"
+      t.integer "seats", null: false, default: 0
 
       t.timestamps null: false
     end

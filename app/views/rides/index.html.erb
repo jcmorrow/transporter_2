@@ -1,5 +1,7 @@
 <h1>Rides</h1>
-
-<%- @rides.each do |ride| %>
-  <%= render ride %>
+<%= link_to "New Ride", new_ride_path %>
+<%- @rides.each do |_ride| %>
+  <%- present(_ride) do |ride| %>
+    <%= render ride %>
+  <% end %>
 <% end %>
