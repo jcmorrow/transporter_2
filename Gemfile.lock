@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/thoughtbot/high_voltage.git
+  revision: cbab60f8b9d82d26a50af630241b7dfb7676fae2
+  specs:
+    high_voltage (3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -105,7 +111,6 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashdiff (0.3.0)
-    high_voltage (2.2.1)
     honeybadger (2.6.0)
     i18n (0.7.0)
     jquery-rails (4.1.1)
@@ -288,7 +293,7 @@ DEPENDENCIES
   factory_girl_rails
   flutie
   formulaic
-  high_voltage
+  high_voltage!
   honeybadger
   jquery-rails
   launchy
