@@ -4,4 +4,8 @@ FactoryGirl.define do
     destination "New York"
     seats "3"
   end
+
+  factory :reservation do
+    ride
+  end
 end

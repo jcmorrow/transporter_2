@@ -1,25 +1,27 @@
 <div class="ride">
-  <dl>
-    <dt>Destination:</dt>
-    <dd>
-      <%= ride.destination %>
-    </dd>
-    <dt>Origin:</dt>
-    <dd>
-      <%= ride.origin %>
-    </dd>
-    <dt>Seats:</dt>
-    <dd>
-      <%= ride.seats %>
-    </dd>
-    <dt>Seats Left:</dt>
-    <dd>
-      <%= ride.available_seats %>
-    </dd>
-    <dt>Price:</dt>
-    <dd>
-      <%= ride.price_in_humanized_dollars %>
-    </dd>
-  </dl>
+  <div class="ride-details">
+    <dl>
+      <dt>Destination:</dt>
+      <dd>
+        <%= ride.destination %>
+      </dd>
+      <dt>Origin:</dt>
+      <dd>
+        <%= ride.origin %>
+      </dd>
+      <dt>Seats:</dt>
+      <dd>
+        <%= ride.seats %>
+      </dd>
+      <dt>Seats Left:</dt>
+      <dd>
+        <%= ride.available_seats %>
+      </dd>
+      <dt>Price:</dt>
+      <dd>
+        <%= ride.price_in_humanized_dollars %>
+      </dd>
+    </dl>
+  </div>
   <%= ride.reserve_button %>
 </div>

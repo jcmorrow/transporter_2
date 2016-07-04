@@ -1,0 +1,26 @@
+<div class="ride">
+  <dl>
+    <dt>Destination:</dt>
+    <dd>
+      <%= bus_ride.destination %>
+    </dd>
+    <dt>Origin:</dt>
+    <dd>
+      <%= bus_ride.origin %>
+    </dd>
+    <dt>Seats:</dt>
+    <dd>
+      <%= bus_ride.seats %>
+    </dd>
+    <dt>Seats Left:</dt>
+    <dd>
+      <%= bus_ride.available_seats %>
+    </dd>
+    <dt>Price:</dt>
+    <dd>
+      <%= bus_ride.price_in_humanized_dollars %>
+    </dd>
+  </dl>
+  <span class="badge-notice">Sponsored Bus Ride</span>
+  <%= bus_ride.reserve_button %>
+</div>

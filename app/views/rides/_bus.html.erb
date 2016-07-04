@@ -1,0 +1,25 @@
+<div class="ride">
+  <dl>
+    <dt>Destination:</dt>
+    <dd>
+      <%= bus.destination %>
+    </dd>
+    <dt>Origin:</dt>
+    <dd>
+      <%= bus.origin %>
+    </dd>
+    <dt>Seats:</dt>
+    <dd>
+      <%= bus.seats %>
+    </dd>
+    <dt>Seats Left:</dt>
+    <dd>
+      <%= bus.available_seats %>
+    </dd>
+    <dt>Price:</dt>
+    <dd>
+      <%= bus.price_in_humanized_dollars %>
+    </dd>
+  </dl>
+  <%= bus.reserve_button %>
+</div>

@@ -10,7 +10,7 @@ class RidesController < ApplicationController
   end
 
   def index
-    @rides = Ride.all
+    @rides = CombinedRidesQuery.new.rides
   end
 
   def new
