@@ -1,4 +1,6 @@
 class RidePresenter < SimpleDelegator
+  VEHICLE_TYPES = %w(bus car).freeze
+
   def initialize(ride, view)
     @ride = ride
     @view = view
@@ -15,6 +17,10 @@ class RidePresenter < SimpleDelegator
     else
       @view.render "rides/disabled_reserve_button", ride: @ride
     end
+  end
+
+  def vehicle_types
+    VEHICLE_TYPES
   end
 
   private

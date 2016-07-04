@@ -1,4 +1,5 @@
 <%= simple_form_for @ride do |f| %>
+  <%= f.input :vehicle_type, collection: @ride.vehicle_types, label_method: :titleize %>
   <%= f.input :destination %>
   <%= f.input :origin %>
   <%= f.input :seats %>

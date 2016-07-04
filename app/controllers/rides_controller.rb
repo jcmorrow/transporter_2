@@ -14,12 +14,12 @@ class RidesController < ApplicationController
   end
 
   def new
-    @ride = Ride.new
+    @ride = RidePresenter.new(Ride.new, ActionView::Base.new)
   end
 
   private
 
   def ride_params
-    params.require(:ride).permit(:destination, :origin, :seats)
+    params.require(:ride).permit(:destination, :origin, :seats, :vehicle_type)
   end
 end
