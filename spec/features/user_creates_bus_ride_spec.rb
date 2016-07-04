@@ -9,6 +9,7 @@ feature "User creates bus ride" do
     fill_in "Origin", with: "San Francisco"
     fill_in "Seats", with: 30
     fill_in "Price", with: "10.00"
+    click_on "Create Ride"
 
     expect(page).to have_content("New York")
     expect(page).to have_content("San Francisco")

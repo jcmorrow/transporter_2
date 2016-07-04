@@ -10,4 +10,12 @@ class Ride < ActiveRecord::Base
   def available_seats
     seats - reservations.count
   end
+
+  def price_in_dollars=(new_price)
+    write_attribute(:price_in_cents, new_price.to_f * 100.0)
+  end
+
+  def to_partial_path
+    "rides/#{vehicle_type}"
+  end
 end

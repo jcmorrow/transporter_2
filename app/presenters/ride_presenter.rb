@@ -11,6 +11,18 @@ class RidePresenter < SimpleDelegator
     ride.available_seats
   end
 
+  def price_in_dollars
+    @ride.price_in_cents / 100.0
+  end
+
+  def price_in_humanized_dollars
+    @view.number_to_currency(price_in_dollars)
+  end
+
+  def price_in_cents
+    @ride&.price_in_cents || 0
+  end
+
   def reserve_button
     if ride.has_available_seats?
       @view.render "rides/reserve_button", ride: @ride
